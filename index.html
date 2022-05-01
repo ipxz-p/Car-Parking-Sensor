@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+        *{
+            font-family: 'Prompt', sans-serif;
+        }
+        .main-container {
+            background: linear-gradient(135deg, #F4D3E2, #BFC4FF);
+
+        }
+
+        .intro-grad-text {
+            background: linear-gradient(135deg, #FEA1C3, #7B7EF6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .intro-type {
+            font-family: 'Oleo Script', cursive;
+        }
+
+        .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 18px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #7B7EF6;
+        }
+        
+        .card:hover{
+            box-shadow: 0 8px 25px #7B7EF6;
+            cursor: pointer;
+            transform: translateY(-20px);
+        }
+
+        *::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        *::-webkit-scrollbar-track {
+            background: #BFC4FF;
+        }
+
+        *::-webkit-scrollbar-thumb {
+            height: 40px;
+            border-radius: 8px;
+            background-color: #7B7EF6;
+        }
+        .swiper-button-prev::after{
+            color: #FEA1C3;
+            margin-right: 10px;
+        }
+        .swiper-button-next::after{
+            color: #FEA1C3;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container h-full overflow-hidden">
+        <section class="h-screen flex justify-center items-center text-[#7B7EF6]">
+            <div id="intro"
+                class="box-container bg-[#FEFBFE] h-[88%] w-[92%] rounded-3xl flex justify-center items-center flex-col">
+                <div class="box-intro text-center border-2 border-[#7B7EF6] p-4 rounded-xl mx-4">
+                    <h1 class="mb-2 text-3xl font-bold">Car Parking <span class="intro-grad-text">Sensor</span></h1>
+                    <span class=" intro-type"></span>
+                    <p class="">Computer Programming Project</p>
+                    <p class="">KMITL Semester 2/2021 1st Year</p>
+                </div>
+                <img class="w-[400px] md:w-[500px]" src="./src/img/car.jpg" alt="">
+            </div>
+        </section>
+        <section class="h-screen flex justify-center items-center objective" id="objective">
+            <div class="box-container bg-[#FEFBFE] h-[88%] w-[92%] rounded-3xl flex justify-center items-center flex-col md:flex-row"
+                id="objective">
+                <div class="text-[#7B7EF6] flex items-center justify-center w-full md:w-1/2 flex-col p-5">
+                    <h1 class="mb-2 text-3xl font-bold">Objective</h1>
+                    <p class="max-w-[400px]">โปรเจคนี้มีจุดประสงค์เพื่อ ความปลอดภัยของการถอยรถ เราจึงสร้างระบบกันชน
+                        โดยการพัฒนาระบบกันชนรถ เราได้ใช้อุปกรณ์ไมโครคอนโทรเลอร์ Arduinoและ hc-sr04 ultrasonic sensor
+                        ตรวจจับ ซึ่งจะทำให้ผู้ขับขี่รถถอยรถอย่างปลอดภัย</p>
+                </div>
+                <div class="w-full md:w-1/2 flex items-center justify-center">
+                    <img class="w-[150px] md:w-[300px]"
+                        src="https://cdn.discordapp.com/attachments/440889636403937288/969955583027474442/unknown.png"
+                        alt="">
+                </div>
+            </div>
+        </section>
+        <section class="h-screen flex justify-center items-center">
+            <div id="origin"
+                class="box-container bg-[#FEFBFE] h-[88%] w-[92%] rounded-3xl flex justify-center items-center flex-col md:flex-row">
+                <div class="w-full md:w-1/2 flex items-center justify-center">
+                    <img class="w-[250px] md:w-[400px]" src="./src/img/Saly-10.png" alt="">
+                </div>
+                <div class="text-[#7B7EF6] flex items-center justify-center w-full md:w-1/2 flex-col p-5">
+                    <h1 class="mb-2 text-3xl font-bold">Origin</h1>
+                    <p class="max-w-[400px]">ปัจจุบันจะเห็นได้ว่าโดยส่วนใหญ่ รถรุ่นใหม่ๆได้มีการติดตั้งระบบกันชนแล้ว
+                        แต่ตอนนี้ยังมีผู้ขับขี่รถรุ่นเก่าที่ยังไม่มีระบบกันชน
+                        ทางกลุ่มได้เล็งเห็นว่าทุกคนควรได้รับความปลอดภัยในด้านนี้ จึงพัฒนาระบบกันชนขึ้นมา เพื่อตอบโจทย์
+                        ผู้ขับขี่รถรุ่นเก่าที่ยังไม่มีระบบกันชน</p>
+                </div>
+
+            </div>
+        </section>
+        <section class="h-screen flex justify-center items-center text-[#7B7EF6]">
+            <div id="tools"
+                class="box-container bg-[#FEFBFE] h-[88%] w-[92%] rounded-3xl flex justify-center items-center flex-col">
+                <h1 class="text-3xl font-bold mb-8">Tools</h1>
+                <div class="swiper mySwiper w-[210px] h-[300px] md:w-[240px] md:h-[320px]">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide flex flex-col p-4">
+                            <img class="rounded-xl"
+                                src="https://cdn.discordapp.com/attachments/440889636403937288/969994652931489882/unknown.png"
+                                alt="">
+                            <p class="text-xs md:text-sm bg-[#fff] text-[#7B7EF6] rounded-md mt-4 p-1">Ardino Uno R3</p>
+                        </div>
+                        <div class="swiper-slide flex flex-col p-4">
+                            <img class="rounded-xl"
+                                src="https://media.discordapp.net/attachments/440889636403937288/969996747583660072/unknown.png?width=624&height=624"
+                                alt="">
+                            <p class="text-xs md:text-sm bg-[#fff] text-[#7B7EF6] rounded-md mt-4 p-1">Hc-sr04 ultrasonic sensor
+                            </p>
+                        </div>
+                        <div class="swiper-slide flex flex-col p-4">
+                            <img class="rounded-xl"
+                                src="https://cdn.discordapp.com/attachments/440889636403937288/969998334863491072/unknown.png"
+                                alt="">
+                            <p class="text-xs md:text-sm bg-[#fff] text-[#7B7EF6] rounded-md mt-4 p-1">Ssd1036 oled display</p>
+                        </div>
+                        <div class="swiper-slide flex flex-col p-4">
+                            <img class="rounded-xl"
+                                src="https://static.cytron.io/image/cache/catalog/products/SO-BUZZ.1/Buzzer%206-12V%20c_w%20Wire-800x800.jpg"
+                                alt="">
+                            <p class="text-xs md:text-sm bg-[#fff] text-[#7B7EF6] rounded-md mt-4 p-1">Buzzer</p>
+                        </div>
+                        <div class="swiper-slide flex flex-col p-4">
+                            <img class="rounded-xl" src="https://commandronestore.com/products/products_img/BR100.png"
+                                alt="">
+                            <p class="text-xs md:text-sm bg-[#fff] text-[#7B7EF6] rounded-md mt-4 p-1">Resistor 1k</p>
+                        </div>
+                        <div class="swiper-slide flex flex-col p-4">
+                            <img class="rounded-xl"
+                                src="https://lzd-img-global.slatic.net/g/p/1b05d3f116e39a653cd477bd440d8961.jpg_720x720q80.jpg_.webp"
+                                alt="">
+                            <p class="text-xs md:text-sm bg-[#fff] text-[#7B7EF6] rounded-md mt-4 p-1">Male to Male Jumper</p>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination text-[#fff] text-xs font-bold"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <section class="h-full flex justify-center items-center text-[#7B7EF6] mb-8">
+            <div class="flex flex-col justify-center items-center">
+                <h1 class="font-bold text-3xl mb-8">Members</h1>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="member">
+                        <div class="card transition duration-300 hover:-translate-y-3 relative flex flex-col justify-center items-center h-[350px] w-[250px] bg-[#7B7EF6] p-4 rounded-xl">
+                            <img class="rounded w-full h-[70%]" src="https://cdn.discordapp.com/attachments/861974571753799700/970162009205264384/IMG_4413.jpg" alt="">
+                            <div class="mt-2 bg-[#fff] w-full rounded p-2 text-center">
+                                <h1>นางสาวสุธีรา พิทักษ์ผลิน</h1>
+                                <p>64070112</p>
+                                <p>Microcontroller / Model</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member">
+                        <div  class="card transition duration-300 hover:-translate-y-3  flex flex-col justify-center items-center h-[350px] w-[250px] bg-[#7B7EF6] p-4 rounded-xl">
+                            <img class="rounded w-full h-[70%]" src="https://cdn.discordapp.com/attachments/440889636403937288/970172375935102996/IMG_20220412_023704_096.jpg" alt="">
+                            <div class="mt-2 bg-[#fff] w-full rounded p-2 text-center">
+                                <h1>นายพงศ์ศิริ สุวรรณศิลป์</h1>
+                                <p>64070193</p>
+                                <p>Microcontroller / Website</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member">
+                        <div class="card transition duration-300 hover:-translate-y-3  flex flex-col justify-center items-center h-[350px] w-[250px] bg-[#7B7EF6] p-4 rounded-xl">
+                            <img class="rounded w-full h-[70%]" src="https://cdn.discordapp.com/attachments/861974571753799700/970248248235261982/7C69363C-197F-4A05-BB2A-D0C9332CE2D8.jpg" alt="">
+                            <div class="mt-2 bg-[#fff] w-full rounded p-2 text-center">
+                                <h1>นางสาววรัญญา กันทะมา</h1>
+                                <p>64070229</p>
+                                <p>Microcontroller / Poster</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="member">
+                        <div class="card transition duration-300 hover:-translate-y-3  flex flex-col justify-center items-center h-[350px] w-[250px] bg-[#7B7EF6] p-4 rounded-xl">
+                            <img class="rounded w-full h-[70%]" src="https://cdn.discordapp.com/attachments/861974571753799700/970162739739758722/IMG_8452.png" alt="">
+                            <div class="mt-2 bg-[#fff] w-full rounded p-2 text-center">
+                                <h1>นางสาวอัญทิชา ประภาศรีกวิน</h1>
+                                <p>64070255</p>
+                                <p>Microcontroller / Data</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 5000,
+            },
+            effect: "cards",
+            grabCursor: true,
+        });
+
+        ScrollReveal().reveal('#intro', {
+            distance: '100px',
+            origin: 'top',
+            duration: 2000,
+            reset: true,
+        });
+        ScrollReveal().reveal('#objective', {
+            distance: '100px',
+            origin: 'left',
+            duration: 2000,
+            reset: true,
+        });
+        ScrollReveal().reveal('#origin', {
+            distance: '100px',
+            origin: 'right',
+            duration: 2000,
+            reset: true,
+        });
+        ScrollReveal().reveal('#tools', {
+            distance: '100px',
+            origin: 'bottom',
+            duration: 2000,
+            reset: true,
+        });
+        ScrollReveal().reveal('.member', {
+            distance: '100px',
+            origin: 'bottom',
+            duration: 2000,
+            reset: true,
+            interval: 300,
+        });
+
+        var typed = new Typed('.intro-type', {
+            strings: ['Microcontroller Ardino Uno R3.', 'For driving safety.'],
+            typeSpeed: 60,
+            backDelay: 1400,
+            backSpeed: 15,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
